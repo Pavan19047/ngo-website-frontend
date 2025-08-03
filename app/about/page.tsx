@@ -95,11 +95,11 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Our volunteers in action"
+                src="/about_us.png"
+                alt="About our NGO - Our volunteers in action making a difference"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
           </div>
@@ -147,8 +147,8 @@ export default function AboutPage() {
             <Card className="text-center">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Sarah Johnson"
+                  src="/team-sarah.svg"
+                  alt="Sarah Johnson - Executive Director"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto mb-4"
@@ -167,8 +167,8 @@ export default function AboutPage() {
             <Card className="text-center">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Michael Chen"
+                  src="/team-michael.svg"
+                  alt="Michael Chen - Program Director"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto mb-4"
@@ -187,8 +187,8 @@ export default function AboutPage() {
             <Card className="text-center">
               <CardHeader>
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Dr. Amara Okafor"
+                  src="/team-amara.svg"
+                  alt="Dr. Amara Okafor - Community Outreach Director"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto mb-4"

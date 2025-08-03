@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional gradient background -->
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dbeafe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGrad2)"/>
+  
+  <!-- Professional business suit -->
+  <ellipse cx="100" cy="160" rx="60" ry="40" fill="#374151"/>
+  
+  <!-- Face -->
+  <circle cx="100" cy="75" r="30" fill="#d97706"/>
+  
+  <!-- Professional short hair -->
+  <path d="M 72 55 Q 100 40 128 55 Q 125 70 100 72 Q 75 70 72 55" fill="#1f2937"/>
+  
+  <!-- Eyes -->
+  <circle cx="92" cy="72" r="2" fill="#111827"/>
+  <circle cx="108" cy="72" r="2" fill="#111827"/>
+  
+  <!-- Professional smile -->
+  <path d="M 90 82 Q 100 88 110 82" stroke="#111827" stroke-width="1.5" fill="none"/>
+  
+  <!-- Suit and tie -->
+  <path d="M 70 140 L 85 130 L 100 135 L 115 130 L 130 140 L 130 200 L 70 200 Z" fill="#374151"/>
+  <rect x="96" y="135" width="8" height="50" fill="#dc2626"/>
+  <path d="M 85 130 L 100 135 L 115 130" stroke="#ffffff" stroke-width="2" fill="none"/>
+</svg>

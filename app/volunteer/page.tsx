@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Image from "next/image"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -20,7 +21,7 @@ export default function VolunteerPage() {
     phone: "",
     age: "",
     location: "",
-    interests: [],
+    interests: [] as string[],
     availability: "",
     experience: "",
     motivation: "",
@@ -82,15 +83,41 @@ export default function VolunteerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="container mx-auto max-w-4xl">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Become a Volunteer</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our mission to create positive change. Fill out the form below to start your volunteer journey with us.
-          </p>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight">Become a Volunteer</h1>
+              <p className="text-xl md:text-2xl text-blue-100">
+                Join our mission to create positive change. Every volunteer makes a difference in building stronger, 
+                more resilient communities worldwide.
+              </p>
+            </div>
+            <div className="relative">
+              <Image
+                src="/volunteer.png"
+                alt="Volunteers working together to make a positive impact"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Content Section */}
+      <div className="bg-gray-50 py-12 px-4">
+        <div className="container mx-auto max-w-4xl">
+          {/* Description */}
+          <div className="text-center mb-12">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Fill out the form below to start your volunteer journey with us and be part of something meaningful.
+            </p>
+          </div>
 
         {/* Volunteer Opportunities */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -303,6 +330,7 @@ export default function VolunteerPage() {
             </form>
           </CardContent>
         </Card>
+        </div>
       </div>
     </div>
   )

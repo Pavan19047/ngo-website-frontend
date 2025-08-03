@@ -36,11 +36,12 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Volunteers helping community"
+                src="/ngo.png"
+                alt="NGO volunteers making a difference in the community"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl object-cover"
+                priority
               />
             </div>
           </div>
