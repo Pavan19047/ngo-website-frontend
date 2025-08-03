@@ -118,6 +118,97 @@ pnpm start
 pnpm lint
 ```
 
+## 🌐 Deployment
+
+### Deploy to Netlify
+
+This project is configured for easy deployment on Netlify. Choose one of the methods below:
+
+#### Method 1: Deploy from GitHub (Recommended)
+
+1. **Push your code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Connect to Netlify**
+   - Go to [Netlify](https://netlify.com) and sign up/login
+   - Click "New site from Git"
+   - Choose GitHub and authorize Netlify
+   - Select your repository (`ngo-website-frontend`)
+
+3. **Configure Build Settings**
+   - **Build command**: `pnpm build`
+   - **Publish directory**: `out`
+   - **Node version**: `18` (set in Environment variables)
+
+4. **Deploy**
+   - Click "Deploy site"
+   - Your site will be live in a few minutes!
+
+#### Method 2: Drag and Drop Deploy
+
+1. **Build the project locally**
+   ```bash
+   pnpm build
+   ```
+
+2. **Deploy to Netlify**
+   - Go to [Netlify](https://netlify.com)
+   - Drag and drop the `out` folder to the deploy area
+   - Your site will be live instantly!
+
+#### Method 3: Netlify CLI
+
+1. **Install Netlify CLI**
+   ```bash
+   npm install -g netlify-cli
+   ```
+
+2. **Login to Netlify**
+   ```bash
+   netlify login
+   ```
+
+3. **Initialize and deploy**
+   ```bash
+   netlify init
+   netlify deploy --prod
+   ```
+
+### Environment Variables
+
+If your project uses environment variables, add them in Netlify:
+
+1. Go to **Site settings** → **Environment variables**
+2. Add your variables:
+   ```
+   NEXT_PUBLIC_SITE_URL=https://your-site.netlify.app
+   NEXT_PUBLIC_CONTACT_EMAIL=your-email@example.com
+   ```
+
+### Custom Domain (Optional)
+
+1. Go to **Site settings** → **Domain management**
+2. Click **Add custom domain**
+3. Follow the DNS configuration instructions
+
+### Continuous Deployment
+
+Once connected to GitHub, Netlify will automatically:
+- Deploy when you push to the main branch
+- Create preview deployments for pull requests
+- Run build checks and tests
+
+### Build Configuration Files
+
+The project includes these configuration files for Netlify:
+
+- `netlify.toml` - Netlify configuration
+- `next.config.mjs` - Next.js configuration for static export
+
 ### Project Structure
 
 ```
